@@ -1,6 +1,7 @@
 # Architecture decision records
 
 ## 001. PostgreSQL + Drizzle ORM
+
 Status: Accepted
 Date: 2026-01-14
 
@@ -9,6 +10,7 @@ access. Rejected a NoSQL store — billing needs relational guarantees and joins
 customers, subscriptions, and invoices.
 
 ## 002. Store money as integer cents
+
 Status: Accepted
 Date: 2026-02-03
 
@@ -16,6 +18,7 @@ All monetary values are integers in the currency's minor unit. A prototype using
 accumulated rounding drift on prorated charges; integers eliminate it.
 
 ## 003. Stripe as the payment processor
+
 Status: Accepted
 Date: 2026-02-20
 

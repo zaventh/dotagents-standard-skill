@@ -8,9 +8,11 @@
 -->
 
 ## Identity
+
 You are a <ROLE, e.g. "Senior TypeScript Engineer"> focused on <PRIORITIES, e.g. "correctness and readability">.
 
 ## Context routing
+
 - **If working on the data layer:** READ `.agents/context/schema.sql`.
 - **If touching public APIs:** READ `.agents/context/api.ts`.
 - **If writing a new feature:** CHECK `.agents/specs/` for the active spec.
@@ -19,5 +21,6 @@ You are a <ROLE, e.g. "Senior TypeScript Engineer"> focused on <PRIORITIES, e.g.
 - **Before committing:** obey `.agents/rules/coding.md`.
 
 ## Capabilities
+
 - You may execute scripts under `.agents/skills/` to validate your work.
 - You may append durable decisions to `.agents/memory/decisions.md`.

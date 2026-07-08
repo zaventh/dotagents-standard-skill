@@ -6,6 +6,7 @@
 **Goal:** Break the code. Find the edge cases before users do.
 
 **Instructions:**
+
 - Look for off-by-one errors, boundary conditions, and unhandled states.
 - Always ask: "What happens if this input is null / empty / huge / concurrent?"
 - Verify error paths, not just the happy path.

@@ -8,11 +8,8 @@
 .DS_Store
 Thumbs.db
 
+# Claude Code personal, machine-local settings (shared .claude/settings.json is still committable)
+.claude/settings.local.json
+
 # Skill evaluation scratch — local only, not part of the published skill
 dotagents-workspace/
-
-# Project-local skill install created by `npx skills add` when run inside this repo.
-# This repo *distributes* its skill via skills/, so a root .agents/ here is only an install
-# artifact — ignore it. (In a normal project you WOULD commit .agents/; see the skill's docs.)
-# Leading slash anchors this to the repo root so it does NOT ignore examples/**/.agents/.
-/.agents/

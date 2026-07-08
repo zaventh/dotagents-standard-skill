@@ -9,6 +9,7 @@ based on [Keep a Changelog](https://keepachangelog.com/), and this project aims 
 Initial release.
 
 ### Added
+
 - `dotagents-standard` skill: mental model, the context decision-taxonomy, the utilize
   and implement workflows, and the `AGENTS.md` router pattern (`SKILL.md`).
 - Reference docs: `references/directory-reference.md` (every `.agents/` subdirectory in

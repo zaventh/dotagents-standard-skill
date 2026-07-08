@@ -8,7 +8,7 @@ An [agent skill](https://agentskills.io) that teaches an AI coding agent how to 
 
 > Install this skill and your agent knows how to set up, migrate to, and work inside a `.agents/` layout — instead of stuffing everything into one monolithic `AGENTS.md` / `CLAUDE.md`.
 
-## What is the dotagents standard?
+## The dotagents standard
 
 As agents take on more work, a single context file (`AGENTS.md`, `CLAUDE.md`, `.cursorrules`) tends to bloat: the agent reads a database schema while editing CSS, behavioral rules blur into static facts, and vendor folders (`.claude/`, `.cursor/`, `.gemini/`) litter the repository root.
 

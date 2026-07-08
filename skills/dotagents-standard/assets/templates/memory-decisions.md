@@ -6,6 +6,7 @@
 -->
 
 ## 001. <Short decision title>
+
 Status: Accepted
 Date: <YYYY-MM-DD>
 
