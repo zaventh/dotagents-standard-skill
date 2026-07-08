@@ -86,7 +86,7 @@ Skills use **progressive disclosure**: the agent always sees the skill's name an
 
 ## Example
 
-See [`examples/sample-project/`](examples/sample-project/) for a **filled-in** `.agents/` layout — a slim [`AGENTS.md`](examples/sample-project/AGENTS.md) router plus real `rules/`, `context/`, `memory/`, `personas/`, and `specs/` files for a hypothetical billing API. It's the concrete counterpart to the blank starters in the skill's `assets/templates/`.
+See the [worked example](examples/README.md) for a **filled-in** `.agents/` layout — a slim [`AGENTS.md`](examples/sample-project/AGENTS.md) router plus real `rules/`, `context/`, `memory/`, `personas/`, and `specs/` files for a hypothetical billing API. It's the concrete counterpart to the blank starters in the skill's `assets/templates/`.
 
 ## Relationship to the standards
 
