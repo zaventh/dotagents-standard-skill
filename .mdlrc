@@ -1,0 +1,3 @@
+style "relaxed"
+# MD029: ordered-list numbering is intentional in the docs.
+rules "~MD029"

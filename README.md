@@ -1,5 +1,6 @@
 # dotagents-standard — an agent skill
 
+[![skills.sh](https://skills.sh/b/zaventh/dotagents-standard-skill)](https://skills.sh/zaventh/dotagents-standard-skill)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Format: Agent Skill](https://img.shields.io/badge/format-agentskills.io-blue.svg)](https://agentskills.io)
 
