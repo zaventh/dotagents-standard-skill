@@ -1,5 +1,6 @@
 ---
 name: dotagents-standard
+version: 0.1.0
 description: >-
   Set up, author, and navigate the dotagents standard — a slim AGENTS.md "router" at the
   repository root plus a hidden .agents/ directory (rules, context, memory, personas, skills,

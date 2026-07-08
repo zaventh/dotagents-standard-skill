@@ -18,6 +18,19 @@ As agents take on more work, a single context file (`AGENTS.md`, `CLAUDE.md`, `.
 
 The agent loads only what the current task matches. This skill packages the know-how to do that well — the decision taxonomy, the router pattern, and ready-to-use templates — and also covers the broader [.agents Protocol](https://dotagentsprotocol.com/) superset.
 
+```mermaid
+flowchart LR
+    task([current task]) --> R
+    R["AGENTS.md<br/>slim router, always read"]
+    R -. "DB work" .-> C[".agents/context/<br/>schema, API types"]
+    R -. "new feature" .-> S[".agents/specs/<br/>active PRD"]
+    R -. "a decision" .-> M[".agents/memory/<br/>ADRs, prefs"]
+    R -. "always obey" .-> RU[".agents/rules/<br/>invariants"]
+    R -. "when testing" .-> P[".agents/personas/<br/>QA, architect"]
+```
+
+<sub>The router is always read; each <code>.agents/</code> file loads only when its condition matches — that's progressive disclosure.</sub>
+
 ## What this skill does
 
 Once installed, it triggers whenever you:
@@ -54,14 +67,15 @@ Claude Code discovers skills under `~/.claude/skills/` (symlinks included), so i
 ```text
 .
 ├── skills/
-│   └── dotagents-standard/           # the skill (installed via `npx skills add`)
-│       ├── SKILL.md                  # mental model, decision taxonomy, workflows, router pattern
-│       ├── references/
-│       │   ├── directory-reference.md    # every .agents/ subdirectory in depth
-│       │   └── protocol-extensions.md    # the dotagentsprotocol.com superset
-│       ├── assets/
-│       │   └── templates/            # copy-paste starters: AGENTS.md, rules, memory, persona, skill
+│   └── dotagents-standard/           # the installable skill (npx skills add …)
+│       ├── SKILL.md                  # mental model, taxonomy, workflows, router pattern
+│       ├── references/               # per-subdir deep reference + protocol superset
+│       ├── assets/templates/         # copy-paste starters
 │       └── LICENSE
+├── examples/
+│   └── sample-project/               # worked example: a filled-in .agents/ layout
+├── .github/                          # CI: validate SKILL.md frontmatter + check links
+├── CHANGELOG.md
 ├── README.md
 └── LICENSE
 ```
@@ -69,6 +83,10 @@ Claude Code discovers skills under `~/.claude/skills/` (symlinks included), so i
 ## How it works
 
 Skills use **progressive disclosure**: the agent always sees the skill's name and description, reads `SKILL.md` when a task matches, and only opens `references/` or `assets/` when it needs the depth. That mirrors the dotagents philosophy itself — load the router first, the library on demand.
+
+## Example
+
+See [`examples/sample-project/`](examples/sample-project/) for a **filled-in** `.agents/` layout — a slim [`AGENTS.md`](examples/sample-project/AGENTS.md) router plus real `rules/`, `context/`, `memory/`, `personas/`, and `specs/` files for a hypothetical billing API. It's the concrete counterpart to the blank starters in the skill's `assets/templates/`.
 
 ## Relationship to the standards
 
