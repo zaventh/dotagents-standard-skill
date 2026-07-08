@@ -1,0 +1,12 @@
+# Editors / IDEs
+.idea/
+.vscode/
+*.swp
+*~
+
+# OS cruft
+.DS_Store
+Thumbs.db
+
+# Skill evaluation scratch — local only, not part of the published skill
+dotagents-workspace/
