@@ -1,3 +1,4 @@
-style "relaxed"
-# MD029: ordered-list numbering is intentional in the docs.
-rules "~MD029"
+# Rule set lives in .mdlstyle.rb — it mirrors mdl's "relaxed" style and adds the
+# project overrides, which have to be a style file because .mdlrc cannot pass
+# parameters to a rule.
+style ".mdlstyle.rb"
